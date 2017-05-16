@@ -6,7 +6,7 @@ Class Alumno
   Public $Nota;
   Public function __construct($Primer_Nombre, $Segundo_Nombre, $Nota)
   { 
-     $this->Primero_Nombre = $Primero_Nombre;
+     $this->Primer_Nombre = $Primer_Nombre;
      $this->Segundo_Nombre = $Segundo_Nombre;
      $this->Nota = $Nota;
     }
@@ -19,11 +19,9 @@ Class Alumno
       return $this->Nota;
     }
 }
-$alumno1 = new Alumno('Julio', 'Pereda');
-$alumno2 = new Alumno('Jhon', 'Reyes');
-$nota1 = new Alumno(12);
-$nota2 = new Alumno(18);
+$alumno1 = new Alumno('Julio', 'Pereda', 12);
+$alumno2 = new Alumno('Jhon', 'Reyes', 18);
 
 //
-echo "{$alumno1->fullName()} tiene una nota de {$nota1->Notas()}";
-echo "{$alumno2->fullName()} tiene una nota de {$nota2->Notas()}";
+echo "{$alumno1->fullName()} tiene una nota de {$alumno1->Notas()}"."\n"; 
+echo "{$alumno2->fullName()} tiene una nota de {$alumno2->Notas()}";
