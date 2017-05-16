@@ -3,7 +3,7 @@ Class Alumno
 {
   Public $Primer_Nombre;
   Public $Segundo_Nombre;
-  Piblic $Nota;
+  Public $Nota;
   Public function __construct($Primer_Nombre, $Segundo_Nombre, $Nota)
   { 
      $this->Primero_Nombre = $Primero_Nombre;
